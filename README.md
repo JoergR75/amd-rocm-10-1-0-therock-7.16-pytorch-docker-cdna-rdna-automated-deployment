@@ -229,7 +229,8 @@ docker pull rocm/vllm:rocm10.1.0_ubuntu24.04_py3.14-pytorch_2.13.0_vllm-0.29.0
 <img width="1766" height="901" alt="image" src="https://github.com/user-attachments/assets/c0b0a20e-9f2d-467b-855b-80e67de5a3df" />
 
 Further vLLM Docker versions can be verified on AMD Docs:
-https://rocm.docs.amd.com/projects/ai-ecosystem/en/latest/inference/vllm.html?rocm-ver=10.1.0&fam=radeon&gpu=ai-r9700&vllm-ver=0.29&i=docker&w=compute&gfx=gfx1201#
+https://rocm.docs.amd.com/projects/ai-ecosystem/en/latest/inference/vllm.html
+or:
 https://hub.docker.com/r/vllm/vllm-openai-rocm/tags
 
 Run vLLM with all available AMD GPU access (example for RDNA4 on Ubuntu 24.04)
