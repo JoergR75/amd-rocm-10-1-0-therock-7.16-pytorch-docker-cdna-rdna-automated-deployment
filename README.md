@@ -75,7 +75,8 @@ Install **Ubuntu 24.04.5 LTS** or **Ubuntu 26.04.1 LTS** (Server or Desktop vers
 wget https://raw.githubusercontent.com/JoergR75/amd-rocm-10-1-0-therock-7.16-pytorch-docker-cdna-rdna-automated-deployment/refs/heads/main/script_module_ROCm_10.1.0_TheRock_7.16_Ubuntu_24.04-26.04_pytorch.sh
 ```
 
-<img width="2190" height="550" alt="image" src="https://github.com/user-attachments/assets/9cd592dd-6602-4edf-b490-d06954d47fe5" />
+<img width="2262" height="474" alt="image" src="https://github.com/user-attachments/assets/f8bb8635-9376-4aa2-9b53-159e5ab85c16" />
+
 
 ### 3️⃣ **Run the Installer**
 ```bash
