@@ -652,7 +652,7 @@ printf "  - python3 test.py\n"
 
 # vLLM Docker images for RDNA4 and CDNA1/2/3/4
 printf "\n 🔹 Install the latest vLLM Docker images:\n"
-printf "  - RDNA4 → sudo docker pull rocm/vllm-dev:nightly_rocm10_20260903\n"
+printf "  - RDNA4 → sudo docker pull rocm/vllm:rocm10.1.0_ubuntu24.04_py3.14-pytorch_2.13.0_vllm-0.29.0\n"
 printf "  - CDNA → sudo docker pull rocm/vllm:latest\n"
 
 # reboot option
