@@ -313,6 +313,7 @@ install_resolute() {
     sudo apt update
     wget https://repo.radeon.com/amdgpu-install/31.60/ubuntu/resolute/amdgpu-install_31.60.316000-1_all.deb
     sudo apt install -y ./amdgpu-install_31.60.316000-1_all.deb
+    sudo apt update
     sudo apt install -y amdgpu-dkms
 
     print '\n 📦 Installing ROCm 10.1.0 / TheRock 7.16 complete Core SDK including runtimes, compilers, development tools, and dependencies...\n'
