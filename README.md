@@ -244,11 +244,11 @@ sudo docker run -it \
     rocm/vllm:rocm10.1.0_ubuntu24.04_py3.14-pytorch_2.13.0_vllm-0.29.0
 ```
 
-<img width="1335" height="251" alt="image" src="https://github.com/user-attachments/assets/e288bd20-4750-4c96-b732-5c8b923be560" />
+<img width="1840" height="289" alt="image" src="https://github.com/user-attachments/assets/89fa76a1-de0a-4bfc-b488-03fc0e3d1678" />
 
 With `amd-smi`, you can verify all available GPUs (in this case, 2× Radeon AI PRO R9700 GPUs).
 
-<img width="1736" height="686" alt="image" src="https://github.com/user-attachments/assets/2877e65f-57f8-4374-a3c7-56854590959e" />
+<img width="1915" height="748" alt="image" src="https://github.com/user-attachments/assets/d24915d3-68a1-4a8c-a9cc-2b6cea9090ec" />
 
 If you need to add a specific GPU, you can use the **passthrough** option.  
 First, verify the available GPUs in the `/dev/dri` directory (host).
@@ -256,7 +256,7 @@ First, verify the available GPUs in the `/dev/dri` directory (host).
 cd /dev/dri && ls
 ```
 
-<img width="1981" height="97" alt="image" src="https://github.com/user-attachments/assets/0268488e-4969-49ab-94af-4f2f24a6555f" />
+<img width="1893" height="98" alt="image" src="https://github.com/user-attachments/assets/789bff7e-b7fd-41e6-afb7-a4a33934e843" />
 
 Let's choose **GPU2**, also referred to as **"card2"** or **"renderD129"**.
 ```bash
@@ -271,7 +271,7 @@ sudo docker run -it \
 ```
 GPU2 has been added to the container
 
-<img width="1642" height="840" alt="image" src="https://github.com/user-attachments/assets/da9330d1-38ee-479b-b072-c19ba3b9d85c" />
+<img width="1999" height="901" alt="image" src="https://github.com/user-attachments/assets/34ea8d0e-7d88-4918-aeea-869c3474971a" />
 
 ## How to Save a Modified Docker Container
 
