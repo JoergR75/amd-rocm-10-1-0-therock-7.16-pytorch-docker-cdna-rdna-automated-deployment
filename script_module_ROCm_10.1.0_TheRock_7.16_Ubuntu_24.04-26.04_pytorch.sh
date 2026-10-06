@@ -307,7 +307,7 @@ install_resolute() {
         numactl \
         libssl-dev
 
-    print '\n 📦 Installing AMD GPU (amdgpu-dkms) kernel driver verion 31.50.0 ...\n'
+    print '\n 📦 Installing AMD GPU (amdgpu-dkms) kernel driver verion 31.60.0 ...\n'
 
     # Install AMD GPU Driver (amdgpu) 31.60.0
     sudo apt update
@@ -315,7 +315,7 @@ install_resolute() {
     sudo apt install -y ./amdgpu-install_31.60.316000-1_all.deb
     sudo apt install -y amdgpu-dkms
 
-    print '\n 📦 Installing ROCm 10.1.0 / TheRock 7.16 + amdgpu 31.60.0 complete Core SDK including runtimes, compilers, development tools, and dependencies...\n'
+    print '\n 📦 Installing ROCm 10.1.0 / TheRock 7.16 complete Core SDK including runtimes, compilers, development tools, and dependencies...\n'
 
     # Download and install GPG key
     sudo mkdir --parents --mode=0755 /etc/apt/keyrings
