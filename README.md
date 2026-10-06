@@ -72,14 +72,14 @@ Install **Ubuntu 24.04.5 LTS** or **Ubuntu 26.04.1 LTS** (Server or Desktop vers
 
 ### 2️⃣ **Download the Script from the Repository**
 ```bash
-wget https://raw.githubusercontent.com/JoergR75/amd-therock-7.15-rocm-10-0-0-pytorch-docker-cdna-rdna-automated-deployment/refs/heads/main/script_module_TheRock_7.15_ROCm_10.0.0_Ubuntu_24.04-26.04_pytorch.sh
+wget https://raw.githubusercontent.com/JoergR75/amd-rocm-10-1-0-therock-7.16-pytorch-docker-cdna-rdna-automated-deployment/refs/heads/main/script_module_ROCm_10.1.0_TheRock_7.16_Ubuntu_24.04-26.04_pytorch.sh
 ```
 
 <img width="2190" height="550" alt="image" src="https://github.com/user-attachments/assets/9cd592dd-6602-4edf-b490-d06954d47fe5" />
 
 ### 3️⃣ **Run the Installer**
 ```bash
-bash script_module_TheRock_7.15_ROCm_10.0.0_Ubuntu_24.04-26.04_pytorch.sh
+bash script_module_ROCm_10.1.0_TheRock_7.16_Ubuntu_24.04-26.04_pytorch.sh
 ```
 **⚠️ Note**: Entering the user password may be required.
 
