@@ -93,7 +93,7 @@ After the successful installation, press "y" to reboot the system and activate a
 
 <img width="2266" height="629" alt="image" src="https://github.com/user-attachments/assets/897fdb13-5396-4456-a592-3358e80a9abe" />
 
-## 🧪 Testing TheRock/ROCm + PyTorch Version and GPU Hardware Setup
+## 🧪 Testing ROCm/TheRock + PyTorch Version and GPU Hardware Setup
 
 After rebooting the system, run the diagnostic script to verify that the ROCm software stack, PyTorch installation, and AMD GPU hardware are correctly detected and functioning.
 
