@@ -171,6 +171,8 @@ sudo apt-get install -y mpich libmpich-dev
 
 2️⃣ Compile from Source
 ```bash
+cd ~
+rm -rf TransferBench
 git clone https://github.com/ROCm/TransferBench.git
 cd TransferBench
 mkdir build && cd build
