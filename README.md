@@ -223,7 +223,7 @@ Use the container image you need.
 
 **RDNA4** architecture running on Ubuntu 24.04
 ```bash
-docker pull vllm/vllm-openai-rocm
+docker pull rocm/vllm:rocm10.1.0_ubuntu24.04_py3.14-pytorch_2.13.0_vllm-0.29.0
 ```
 
 <img width="1676" height="1213" alt="image" src="https://github.com/user-attachments/assets/1134ecd5-5d0c-4eaa-9d6e-c598128ab085" />
