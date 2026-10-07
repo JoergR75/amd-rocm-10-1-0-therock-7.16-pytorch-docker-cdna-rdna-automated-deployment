@@ -51,7 +51,7 @@ The entire setup process is fully unattended and optimized for both workstation 
 
 ## 🚀 Installation
 
-### 1️⃣ **System preperation**
+### 1️⃣ **System preparation**
 Install **Ubuntu 24.04.5 LTS** or **Ubuntu 26.04.1 LTS** (Server or Desktop version).
 
 **⚠️ Note**: This Guide uses Ubuntu **24.04.5 LTS**
