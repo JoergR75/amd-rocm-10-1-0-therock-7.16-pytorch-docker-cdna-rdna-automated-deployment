@@ -25,7 +25,9 @@ DKMS automatically rebuilds the driver when the Linux kernel is updated. The set
 For OpenGL validation and GPU-accelerated graphics workloads, the environment installs Mesa utilities:
 OpenGL can be validated with:
 
+```bash
 glxinfo -B
+```
 
 This reports the active OpenGL renderer, vendor, version, and hardware-acceleration status.
 
