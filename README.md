@@ -10,17 +10,58 @@
 
 ## 📌 Overview
 
-This repository provides a fully automated, non-interactive deployment environment for AMD GPU software development targeting AI and HPC workloads on Ubuntu **24.04** and **26.04**. The setup is centered on AMD **TheRock 7.16** based on **ROCm 10.1.0** and the latest stable PyTorch release.
+This repository provides a fully automated, non-interactive deployment environment for AMD GPU development targeting **AI, HPC, and graphics workloads** on Ubuntu **24.04** and **26.04**.
 
-At the platform layer, the script installs the AMD GPU kernel driver (`amdgpu`) **version 31.60.0** directly from AMD's official APT repository by automatically configuring the repository signing key and package source before installing the DKMS package. Using DKMS ensures the kernel driver is automatically rebuilt when the Linux kernel is updated, providing reliable compatibility across supported Ubuntu releases. The deployment then installs the **TheRock 7.16** runtime, including HIP support. The environment is designed to support RDNA4 GPUs. The deployment also configures the required system permissions (`video`, `render`, `sudo`) and installs kernel headers necessary for compiling GPU-accelerated native extensions.
+The setup is based on **AMD TheRock 7.16 / ROCm 10.1.0** and **PyTorch 2.14 Stable**, with support for modern AMD GPUs including **RDNA4**.
 
-For the AI framework layer, the script installs PyTorch 2.14 Stable using ROCm 10.1.0 wheels from the official PyTorch ROCm nightly repository. This enables access to the latest HIP runtime capabilities, compiler optimizations, and kernel fusion features. The environment is complemented with widely used AI and data-processing libraries, including Transformers, Accelerate, Diffusers, Datasets, and SentencePiece, together with the required Python build tooling for immediate development, testing, benchmarking, and profiling of modern LLM, diffusion, and distributed workloads.
+### 🔧 Platform & GPU Driver
 
-The developer toolchain further includes essential C/C++ build utilities and low-level GPU development packages such as `cmake`, `libstdc++` development headers, `git`, `git-lfs`, `libmsgpack`, and `TransferBench` for PCIe and HBM bandwidth validation. Runtime observability and diagnostics are supported through utilities including `htop`, `ncdu`, `rocminfo`, and `amd-smi`.
+The deployment automatically installs the AMD GPU kernel driver (`amdgpu`) **31.60.0** from AMD's official APT repository, including repository signing keys, DKMS, and required kernel headers.
 
-To validate the installation, the deployment automatically generates a verification script that performs end-to-end GPU checks, including ROCm runtime detection, PyTorch HIP availability, GPU enumeration, and successful on-device tensor execution.
+DKMS automatically rebuilds the driver when the Linux kernel is updated. The setup also configures the required `video`, `render`, and `sudo` permissions.
 
-The entire setup process is fully unattended and optimized for both workstation and server deployments. Before installation, the script detects existing ROCm or pip-installed PyTorch environments and removes conflicting packages - including ROCm-specific PyTorch builds - before configuring the AMD package repository and installing the kernel driver, ensuring a clean, reproducible deployment state.
+### 🎨 OpenGL Support
+
+For OpenGL validation and GPU-accelerated graphics workloads, the environment installs Mesa utilities:
+OpenGL can be validated with:
+
+glxinfo -B
+
+This reports the active OpenGL renderer, vendor, version, and hardware-acceleration status.
+
+## 🤖 AI & Development Stack
+
+The environment includes **PyTorch 2.14 with ROCm 10.1.0** together with commonly used AI libraries:
+
+- Transformers
+- Accelerate
+- Diffusers
+- Datasets
+- SentencePiece
+
+The developer and GPU toolchain includes:
+
+- `cmake`
+- `git` / `git-lfs`
+- `libstdc++` development headers
+- `libmsgpack`
+- **TransferBench** for PCIe/HBM bandwidth testing
+- `rocminfo`
+- `amd-smi`
+- `htop` / `ncdu`
+- `mesa-utils`
+
+### ✅ Automated Validation
+
+A verification script is generated automatically to validate:
+
+- ROCm and HIP runtime
+- PyTorch HIP availability
+- GPU enumeration
+- On-device tensor execution
+- OpenGL renderer and hardware acceleration
+
+The entire deployment is **fully unattended and reproducible**, with automatic cleanup of conflicting ROCm and PyTorch installations before configuring the AMD driver and software stack.
 
 ---
 
